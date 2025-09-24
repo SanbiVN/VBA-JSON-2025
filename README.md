@@ -2,7 +2,8 @@
 JSON conversion and parsing for VBA (Windows and Mac Excel, Access, and other Office applications).
 
 ---------------------------------------------------------------------------
-### Last Update (xx/xx/2025) 
+
+### Last Update (2025) 
 - Fixed parse number 
 - Fixed decode \xXX for jsonParseString
 - Use StringBuffer (Cristian Buse) - [VBA-StringBuffer](https://github.com/cristianbuse/VBA-StringBuffer)
