@@ -153,7 +153,7 @@ Public Property Let setEscapeSolidus(b As Boolean)
   JsonOptions.keyEscapeSolidus = -b * 47
 End Property
 Public Function removeObjectKeys(ByVal dict As Object, Optional delimiter$ = ",", Optional backet$ = "'", Optional skipNull As Boolean) As String
-  Dim i, s As New StringBuilder, s0$, v$, X$
+  Dim i, s As New StringBuffer, s0$, v$, X$
   X = IIf(skipNull, "", "null")
   For Each i In dict.Keys()
     If IsObject(dict(i)) Then v = backet & ConvertToJson(dict(i)) & backet Else v = ConvertToJson(dict(i), , , backet = "'")
@@ -197,7 +197,7 @@ Public Function ConvertToJson(ByVal JsonValue As Variant, Optional ByVal Whitesp
   Dim jIndex2D As Long, jLBound2D As Long, jUBound2D As Long, jIsFirstItem2D As Boolean
   Dim jKey As Variant, jValue As Variant, jDateStr As String, jConverted As String
   Dim jSkipItem As Boolean, jPrettyPrint As Boolean, jIndentation As String
-  Dim jInnerIndentation As String, jBuffer As New StringBuilder, ss$
+  Dim jInnerIndentation As String, jBuffer As New StringBuffer, ss$
   Select Case stringSingleQuote
   Case 0:
   Case 1: ss = "'"
@@ -405,7 +405,7 @@ Private Function jsonParseValue() As Variant
 End Function
  
 Private Function jsonParseString(ByVal json_Quote$) As String
-  With New StringBuilder
+  With New StringBuffer
     Do
       idx = idx + 1: vv = Mid$(tJson, idx, 1)
       Select Case vv
@@ -524,7 +524,7 @@ End Function
 Private Function jsonEncode(ByVal json As Variant) As String
   ' Reference: http://www.ietf.org/rfc/rfc4627.txt
   ' Escape: ", \, /, backspace, form feed, line feed, carriage return, tab
-  Dim i As Long, s As String, m As Long, b As String, json_Buffer As New StringBuilder
+  Dim i As Long, s As String, m As Long, b As String, json_Buffer As New StringBuffer
   For i = 1 To Len(json)
     ' When AscW returns a negative number, it returns the twos complement form of that number.
     ' To convert the twos complement notation into normal binary notation, add 0xFFF to the return result.
