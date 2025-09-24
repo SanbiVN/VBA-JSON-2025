@@ -9,7 +9,7 @@ JSON conversion and parsing for VBA (Windows and Mac Excel, Access, and other Of
 - Use StringBuffer (Cristian Buse) - [VBA-StringBuffer](https://github.com/cristianbuse/VBA-StringBuffer)
 - Recommended use Dictionary (Cristian Buse) - [VBA-FastDictionary](https://code.google.com/p/vba-json/](https://github.com/cristianbuse/VBA-FastDictionary))
 
-It is recommended to move all code into Class module to reduce memory load, when not using Json parsing process.
+   It is recommended to move all code into Class module to reduce memory load, when not using Json parsing process.
 ---------------------------------------------------------------------------
 
 It grew out of the excellent project [vba-json](https://code.google.com/p/vba-json/),
