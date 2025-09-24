@@ -177,7 +177,6 @@ Private Type json_Options
     UseDoubleForLargeNumbers As Boolean
  
     ' The JSON standard requires object keys to be quoted (" or '), use this option to allow unquoted keys
-    ' Tiï¿½u chuï¿½ï¿½n JSON yï¿½u cï¿½ï¿½u cï¿½c khï¿½a ï¿½ï¿½ï¿½i tï¿½ï¿½ï¿½ng phaï¿½i ï¿½ï¿½ï¿½ï¿½c trï¿½ch dï¿½ï¿½n ( " hoï¿½ï¿½c ' ), haï¿½y sï¿½ï¿½ duï¿½ng tï¿½y choï¿½n nï¿½y ï¿½ï¿½ï¿½ cho phï¿½p cï¿½c khï¿½a khï¿½ng ï¿½ï¿½ï¿½ï¿½c trï¿½ch dï¿½ï¿½n
     AllowUnquotedKeys As Boolean
  
     ' The solidus (/) is not required to be escaped, use this option to escape them as \/ in ConvertToJson
