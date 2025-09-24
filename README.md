@@ -1,12 +1,14 @@
 # VBA-JSON
-
-Last Update (xx/xx/2025)
-      - Fixed parse number
-      - fixed decode \xXX for jsonParseString
-      - Use Dictionary (Cristian Buse)- https://github.com/cristianbuse/VBA-FastDictionary
+JSON conversion and parsing for VBA (Windows and Mac Excel, Access, and other Office applications).
 
 ---------------------------------------------------------------------------
-JSON conversion and parsing for VBA (Windows and Mac Excel, Access, and other Office applications).
+### Last Update (xx/xx/2025) 
+- Fixed parse number 
+- Fixed decode \xXX for jsonParseString 
+- Recommended use Dictionary (Cristian Buse) - [VBA-FastDictionary]([https://code.google.com/p/vba-json/](https://github.com/cristianbuse/VBA-FastDictionary))
+
+---------------------------------------------------------------------------
+
 It grew out of the excellent project [vba-json](https://code.google.com/p/vba-json/),
 with additions and improvements made to resolve bugs and improve performance (as part of [VBA-Web](https://github.com/VBA-tools/VBA-Web)).
 
